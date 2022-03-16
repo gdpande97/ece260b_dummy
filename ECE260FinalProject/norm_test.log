@@ -1,0 +1,411 @@
+VCD info: dumpfile fullchip_tb.vcd opened for output.
+##### Q data txt reading #####
+##### K data txt reading #####
+##### Estimated multiplication result #####
+input at            0 row and           0 column is 00002aa4
+sum used to divide is 003f9
+result with sum as 4dd is 000008c4
+output at           0 row and           0 column is 00000abb
+input at            0 row and           1 column is 0000843b
+sum used to divide is 003f9
+result with sum as 4dd is 00001b30
+output at           0 row and           1 column is 00002148
+input at            0 row and           2 column is 000024a2
+sum used to divide is 003f9
+result with sum as 4dd is 00000788
+output at           0 row and           2 column is 00000938
+input at            0 row and           3 column is ffffa42b
+sum used to divide is 003f9
+result with sum as 4dd is ffffed1f
+output at           0 row and           3 column is 004059a7
+input at            0 row and           4 column is 00002d43
+sum used to divide is 003f9
+result with sum as 4dd is 0000094e
+output at           0 row and           4 column is 00000b64
+input at            0 row and           5 column is ffff8128
+sum used to divide is 003f9
+result with sum as 4dd is ffffe5ec
+output at           0 row and           5 column is 004050d7
+input at            0 row and           6 column is 00001d02
+sum used to divide is 003f9
+result with sum as 4dd is 000005f6
+output at           0 row and           6 column is 0000074d
+input at            0 row and           7 column is fffffb93
+sum used to divide is 003f9
+result with sum as 4dd is ffffff18
+output at           0 row and           7 column is 00406fa8
+input at            1 row and           0 column is ffffbdcf
+sum used to divide is 004dd
+result with sum as 4dd is fffff264
+output at           1 row and           0 column is 00349610
+input at            1 row and           1 column is ffffbef7
+sum used to divide is 004dd
+result with sum as 4dd is fffff2a1
+output at           1 row and           1 column is 0034964d
+input at            1 row and           2 column is ffff4e02
+sum used to divide is 004dd
+result with sum as 4dd is ffffdb67
+output at           1 row and           2 column is 00347f13
+input at            1 row and           3 column is ffffd23b
+sum used to divide is 004dd
+result with sum as 4dd is fffff697
+output at           1 row and           3 column is 00349a43
+input at            1 row and           4 column is 00001033
+sum used to divide is 004dd
+result with sum as 4dd is 00000354
+output at           1 row and           4 column is 00000354
+input at            1 row and           5 column is 000030b0
+sum used to divide is 004dd
+result with sum as 4dd is 00000a02
+output at           1 row and           5 column is 00000a02
+input at            1 row and           6 column is ffff56fe
+sum used to divide is 004dd
+result with sum as 4dd is ffffdd40
+output at           1 row and           6 column is 003480ec
+input at            1 row and           7 column is ffffddef
+sum used to divide is 004dd
+result with sum as 4dd is fffff8ff
+output at           1 row and           7 column is 00349cab
+input at            2 row and           0 column is ffffa2a9
+sum used to divide is 004e4
+result with sum as 4dd is ffffeccf
+output at           2 row and           0 column is 0034453f
+input at            2 row and           1 column is fffff64a
+sum used to divide is 004e4
+result with sum as 4dd is fffffe01
+output at           2 row and           1 column is 00345658
+input at            2 row and           2 column is ffff8838
+sum used to divide is 004e4
+result with sum as 4dd is ffffe75f
+output at           2 row and           2 column is 00343fd7
+input at            2 row and           3 column is ffffa490
+sum used to divide is 004e4
+result with sum as 4dd is ffffed33
+output at           2 row and           3 column is 003445a2
+input at            2 row and           4 column is ffffbc71
+sum used to divide is 004e4
+result with sum as 4dd is fffff21c
+output at           2 row and           4 column is 00344a84
+input at            2 row and           5 column is fffffeed
+sum used to divide is 004e4
+result with sum as 4dd is ffffffc8
+output at           2 row and           5 column is 0034581c
+input at            2 row and           6 column is ffff3cbd
+sum used to divide is 004e4
+result with sum as 4dd is ffffd7da
+output at           2 row and           6 column is 00343068
+input at            2 row and           7 column is 00003032
+sum used to divide is 004e4
+result with sum as 4dd is 000009e8
+output at           2 row and           7 column is 000009da
+input at            3 row and           0 column is ffffe819
+sum used to divide is 0042a
+result with sum as 4dd is fffffb16
+output at           3 row and           0 column is 003d74bc
+input at            3 row and           1 column is ffff6c6d
+sum used to divide is 0042a
+result with sum as 4dd is ffffe1a8
+output at           3 row and           1 column is 003d5709
+input at            3 row and           2 column is 0000187e
+sum used to divide is 0042a
+result with sum as 4dd is 00000509
+output at           3 row and           2 column is 000005e1
+input at            3 row and           3 column is 000028d0
+sum used to divide is 0042a
+result with sum as 4dd is 00000864
+output at           3 row and           3 column is 000009cd
+input at            3 row and           4 column is 000051cf
+sum used to divide is 0042a
+result with sum as 4dd is 000010d2
+output at           3 row and           4 column is 000013a5
+input at            3 row and           5 column is ffffec71
+sum used to divide is 0042a
+result with sum as 4dd is fffffbfb
+output at           3 row and           5 column is 003d75c7
+input at            3 row and           6 column is 000078c7
+sum used to divide is 0042a
+result with sum as 4dd is 000018d5
+output at           3 row and           6 column is 00001d01
+input at            3 row and           7 column is ffffb5b0
+sum used to divide is 0042a
+result with sum as 4dd is fffff0b9
+output at           3 row and           7 column is 003d68a1
+input at            4 row and           0 column is ffffa6b5
+sum used to divide is 0035a
+result with sum as 4dd is ffffeda4
+output at           4 row and           0 column is 004c4738
+input at            4 row and           1 column is ffffb665
+sum used to divide is 0035a
+result with sum as 4dd is fffff0de
+output at           4 row and           1 column is 004c4be7
+input at            4 row and           2 column is ffffb7e9
+sum used to divide is 0035a
+result with sum as 4dd is fffff12e
+output at           4 row and           2 column is 004c4c5b
+input at            4 row and           3 column is 00000e7b
+sum used to divide is 0035a
+result with sum as 4dd is 000002fa
+output at           4 row and           3 column is 00000452
+input at            4 row and           4 column is ffffee22
+sum used to divide is 0035a
+result with sum as 4dd is fffffc54
+output at           4 row and           4 column is 004c5c88
+input at            4 row and           5 column is 00005346
+sum used to divide is 0035a
+result with sum as 4dd is 0000111f
+output at           4 row and           5 column is 000018d8
+input at            4 row and           6 column is ffffb856
+sum used to divide is 0035a
+result with sum as 4dd is fffff144
+output at           4 row and           6 column is 004c4c7b
+input at            4 row and           7 column is fffff93e
+sum used to divide is 0035a
+result with sum as 4dd is fffffe9d
+output at           4 row and           7 column is 004c5fd9
+input at            5 row and           0 column is fffff69e
+sum used to divide is 004e4
+result with sum as 4dd is fffffe13
+output at           5 row and           0 column is 00345669
+input at            5 row and           1 column is ffffa1e5
+sum used to divide is 004e4
+result with sum as 4dd is ffffeca7
+output at           5 row and           1 column is 00344517
+input at            5 row and           2 column is 000069d4
+sum used to divide is 004e4
+result with sum as 4dd is 000015c2
+output at           5 row and           2 column is 000015a3
+input at            5 row and           3 column is ffff86f3
+sum used to divide is 004e4
+result with sum as 4dd is ffffe71c
+output at           5 row and           3 column is 00343f94
+input at            5 row and           4 column is ffffbe62
+sum used to divide is 004e4
+result with sum as 4dd is fffff282
+output at           5 row and           4 column is 00344aea
+input at            5 row and           5 column is ffffc48f
+sum used to divide is 004e4
+result with sum as 4dd is fffff3c8
+output at           5 row and           5 column is 00344c2d
+input at            5 row and           6 column is 00009417
+sum used to divide is 004e4
+result with sum as 4dd is 00001e73
+output at           5 row and           6 column is 00001e47
+input at            5 row and           7 column is ffffe940
+sum used to divide is 004e4
+result with sum as 4dd is fffffb53
+output at           5 row and           7 column is 003453ae
+input at            6 row and           0 column is 00000570
+sum used to divide is 004f9
+result with sum as 4dd is 0000011e
+output at           6 row and           0 column is 00000117
+input at            6 row and           1 column is ffffd8c9
+sum used to divide is 004f9
+result with sum as 4dd is fffff7f0
+output at           6 row and           1 column is 00337363
+input at            6 row and           2 column is 0000536d
+sum used to divide is 004f9
+result with sum as 4dd is 00001127
+output at           6 row and           2 column is 000010c6
+input at            6 row and           3 column is ffff928f
+sum used to divide is 004f9
+result with sum as 4dd is ffffe980
+output at           6 row and           3 column is 00336543
+input at            6 row and           4 column is 000092f1
+sum used to divide is 004f9
+result with sum as 4dd is 00001e36
+output at           6 row and           4 column is 00001d8c
+input at            6 row and           5 column is ffffa991
+sum used to divide is 004f9
+result with sum as 4dd is ffffee3b
+output at           6 row and           5 column is 003369e4
+input at            6 row and           6 column is 00000313
+sum used to divide is 004f9
+result with sum as 4dd is 000000a1
+output at           6 row and           6 column is 0000009e
+input at            6 row and           7 column is ffff5d1f
+sum used to divide is 004f9
+result with sum as 4dd is ffffde83
+output at           6 row and           7 column is 00335a84
+input at            7 row and           0 column is ffffef09
+sum used to divide is 002f9
+result with sum as 4dd is fffffc83
+output at           7 row and           0 column is 00561891
+input at            7 row and           1 column is ffffd890
+sum used to divide is 002f9
+result with sum as 4dd is fffff7e5
+output at           7 row and           1 column is 00561102
+input at            7 row and           2 column is ffffec46
+sum used to divide is 002f9
+result with sum as 4dd is fffffbf2
+output at           7 row and           2 column is 005617a3
+input at            7 row and           3 column is 0000850c
+sum used to divide is 002f9
+result with sum as 4dd is 00001b5b
+output at           7 row and           3 column is 00002cc1
+input at            7 row and           4 column is ffffaed3
+sum used to divide is 002f9
+result with sum as 4dd is ffffef4f
+output at           7 row and           4 column is 005602f7
+input at            7 row and           5 column is 000020c7
+sum used to divide is 002f9
+result with sum as 4dd is 000006bd
+output at           7 row and           5 column is 00000b06
+input at            7 row and           6 column is 00000b1a
+sum used to divide is 002f9
+result with sum as 4dd is 00000248
+output at           7 row and           6 column is 000003bc
+input at            7 row and           7 column is 00002e53
+sum used to divide is 002f9
+result with sum as 4dd is 00000986
+output at           7 row and           7 column is 00000f95
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+Giving div signal here
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Before
+in  0 is ffb93
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is ffb93
+sum 2 core is xxxxx
+out 0 is xxxxx
+Before
+in  0 is ffb93
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is ffb93
+sum 2 core is xxxxx
+out 0 is xxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Before
+in  0 is ffb93
+sum 2 core is 003f9
+out 0 is xxxxx
+After
+in  0 is ffb93
+sum 2 core is 003f9
+out 0 is xxxxx
+Before
+in  0 is fddef
+sum 2 core is 004dd
+out 0 is 405ef
+After
+in  0 is fddef
+sum 2 core is 004dd
+out 0 is 405ef
+33c9e33cdb325a1340d10035400a023277a34339
+Before
+in  0 is fddef
+sum 2 core is 004e4
+out 0 is 34339
+After
+in  0 is fddef
+sum 2 core is 004e4
+out 0 is 34339
+Before
+in  0 is 03032
+sum 2 core is 0042a
+out 0 is 33e8e
+After
+in  0 is 03032
+sum 2 core is 0042a
+out 0 is 33e8e
+3c13d3d5523bae33c1b23c76e3d7653a8c300b92
+Before
+in  0 is 03032
+sum 2 core is 0035a
+out 0 is 00b92
+After
+in  0 is 03032
+sum 2 core is 0035a
+out 0 is 00b92
+Before
+in  0 is fb5b0
+sum 2 core is 004e4
+out 0 is 00e61
+After
+in  0 is fb5b0
+sum 2 core is 004e4
+out 0 is 00e61
+340a2327580050200858010ba34185018b233653
+Before
+in  0 is fb5b0
+sum 2 core is 004f9
+out 0 is 33653
+After
+in  0 is fb5b0
+sum 2 core is 004f9
+out 0 is 33653
+Before
+in  0 is ff93e
+sum 2 core is 002f9
+out 0 is 328c2
+After
+in  0 is ff93e
+sum 2 core is 002f9
+out 0 is 328c2
+543da54921549a4004df55be101c03549c855f9e
+Before
+in  0 is ff93e
+sum 2 core is xxxxx
+out 0 is 55f9e
+After
+in  0 is ff93e
+sum 2 core is xxxxx
+out 0 is 55f9e
+Before
+in  0 is fe940
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is fe940
+sum 2 core is xxxxx
+out 0 is xxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Before
+in  0 is fe940
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is fe940
+sum 2 core is xxxxx
+out 0 is xxxxx
+Before
+in  0 is f5d1f
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is f5d1f
+sum 2 core is xxxxx
+out 0 is xxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Before
+in  0 is f5d1f
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is f5d1f
+sum 2 core is xxxxx
+out 0 is xxxxx
+Before
+in  0 is 02e53
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is 02e53
+sum 2 core is xxxxx
+out 0 is xxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Before
+in  0 is 02e53
+sum 2 core is xxxxx
+out 0 is xxxxx
+After
+in  0 is 02e53
+sum 2 core is xxxxx
+out 0 is xxxxx
