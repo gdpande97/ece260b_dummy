@@ -52,7 +52,7 @@ assign pmem_wr = inst[0];
 assign mac_in  = inst[6] ? kmem_out : qmem_out;
 assign pmem_in = inst[16] ? fifo_out : sfp_out;
 
-assign out = sfp_out;
+assign out = pmem_out;
 
 mac_array #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_array_instance (
         .in(mac_in), 
@@ -114,8 +114,11 @@ sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sft_instance(
 
   //////////// For printing purpose ////////////
   always @(posedge clk) begin
-        // if(pmem_wr) begin
-        //   $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
+         if(pmem_wr) begin
+           $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
+         end
+        // if(pmem_rd) begin
+        //   $display("Memory read from PSUM mem add %x %x", pmem_add, pmem_out);
         // end
   end
 

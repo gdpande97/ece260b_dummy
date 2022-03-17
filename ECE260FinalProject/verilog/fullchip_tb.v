@@ -192,12 +192,12 @@ $display("##### Estimated multiplication result #####");
   
   for (t=0; t<total_cycle; t=t+1) begin
      for (q=0; q<col; q=q+1) begin
-         $display("input at  %d row and %d column is %h", t, q, result[t][q]);
+        //  $display("input at  %d row and %d column is %h", t, q, result[t][q]);
 
          result_div[t][q] = (result[t][q]<<8)/sum[t][bw_psum +3:7];
-         $display("sum used to divide is %h", sum[t][bw_psum+3:7]);
+        //  $display("sum used to divide is %h", sum[t][bw_psum+3:7]);
          result_temp = (result[t][q]<<8)/div_temp;
-         $display("result with sum as 4dd is %h", result_temp);
+        //  $display("result with sum as 4dd is %h", result_temp);
          $display("output at %d row and %d column is %h", t, q, result_div[t][q]);
          temp5b = result_div[t][q];
          temp16b = {temp16b[139:0], temp5b};
@@ -410,24 +410,94 @@ $display("##### move ofifo to pmem #####");
 //   end
 
 ////////////////// move from pmem to sfp and process ////////////////////
-  // $display("#########Starting movement from pmem to sfp and processing#########");
+  $display("#########Starting movement from pmem to sfp and processing#########");
   
-  for(q=0;q<total_cycle + 1;q=q+1) begin
+  for(q=0;q<total_cycle*2;q=q+1) begin
     #0.5 clk = 1'b0;
-    acc = 1;
     pmem_rd = 1;
+    // ofifo_rd  =1;
     
-    if(q>0) begin
+    if(q%2==1) 
+        acc = 1;
+    else
+	acc = 0;
+
+    if(q>0 && q%2==0) begin
       pmem_add = pmem_add + 1;
     end
-
     #0.5 clk = 1'b1;
+
+    // #0.5 clk = 1'b0;
+    // #0.5 clk = 1'b1;
+    // #0.5 clk = 1'b0;
+    // #0.5 clk = 1'b1;
+    // $display("%40h", pmem_out);
+
   end
 
   #0.5 clk = 1'b0;  
   pmem_rd = 0; ofifo_rd = 0; pmem_add = 0; acc = 0;
  
   #0.5 clk = 1'b1;
+
+
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0;
+  #0.5 clk = 1'b1;
+
+
+  // for(t = 0; t <total_cycle +3; t = t + 1) begin
+  //   if()
+
+
+
+  //   // // $display("%h",sum_out);
+  //   // #0.5 clk = 1'b0;
+  //   // pmem_rd = 1;
+  //   // #0.5 clk = 1'b1;
+  //   // #0.5 clk = 1'b0;
+  //   // div = 1;
+  //   // pmem_rd = 0;
+  //   // #0.5 clk = 1'b1;
+  //   // #0.5 clk = 1'b0;
+  //   // //div = 0;
+  //   // //#0.5 clk = 1'b1;
+  //   // //#0.5 clk = 1'b0;
+  //   // pmem_wr = 1;
+  //   // #0.5 clk = 1'b1;
+  //   // #0.5 clk = 1'b0;
+  //   // pmem_wr = 0;
+  //   // pmem_add = pmem_add + 1;
+
+  //   // #0.5 clk = 1'b1;
+
+  //   // $display("%h", sfp_out);
+
+  // end
+
+  for (q=0; q<total_cycle * 3; q=q+1) begin
+    #0.5 clk = 1'b0;
+    pmem_rd = 1;
+    // sel_pmem = 0;
+
+    if (q%3 == 1)
+    div = 1;
+    else
+    div = 0;
+
+   if (q%3 == 2)
+    pmem_wr = 1;
+   else
+    pmem_wr = 0;
+
+
+    if (q>0 && q%3 == 0) begin
+       pmem_add = pmem_add + 1;
+    end
+
+    #0.5 clk = 1'b1;
+  end
 
   for(q=0;q<total_cycle+2;q=q+1) begin
     #0.5 clk = 1'b0;
@@ -440,53 +510,53 @@ $display("##### move ofifo to pmem #####");
   end
 
 
-  $display("Giving div signal here");
-  for(q=0;q<total_cycle + 1;q=q+1) begin
-    #0.5 clk = 1'b0;
-    pmem_rd = 1;
-    #0.5 clk = 1'b1;
-    #0.5 clk = 1'b0;
-    div = 1;   
-    // #0.5 clk =1'b1;
-    // #0.5 clk = 1'b0;
-  
-    // div = 0;
-
-    // #0.5 clk =1'b1;
-    // #0.5 clk = 1'b0;
-    // #0.5 clk =1'b1;
-    // #0.5 clk = 1'b0;
-        // if((q%4)==0)
-        // begin
-        // div=1;
-        // // $display("abc");
-        // end
-        // else
-        // div=0;
-    
-    
-    
-    if(q>0) begin
-      pmem_add = pmem_add + 1;
-
-    end
-    $display("%40h", sfp_out);
-    #0.5 clk = 1'b1;
-
-  end
-  
-  // for(q=0;q<total_cycle+1;q=q+1) begin
+  // $display("Giving div signal here");
+  // for(q=0;q<total_cycle + 1;q=q+1) begin
   //   #0.5 clk = 1'b0;
-  //   // fifo_ext_rd = 1'b1;
-  //   // fifo_out[q] = sum_out;
-  //   $display("%40h", sfp_out);
-  //   $display("%5h", fifo_out[q]);
+  //   pmem_rd = 1;
   //   #0.5 clk = 1'b1;
+  //   #0.5 clk = 1'b0;
+  //   div = 1;   
+  //   // #0.5 clk =1'b1;
+  //   // #0.5 clk = 1'b0;
+  
+  //   // div = 0;
+
+  //   // #0.5 clk =1'b1;
+  //   // #0.5 clk = 1'b0;
+  //   // #0.5 clk =1'b1;
+  //   // #0.5 clk = 1'b0;
+  //       // if((q%4)==0)
+  //       // begin
+  //       // div=1;
+  //       // // $display("abc");
+  //       // end
+  //       // else
+  //       // div=0;
+    
+    
+    
+  //   if(q>0) begin
+  //     pmem_add = pmem_add + 1;
+
+  //   end
+  //   $display("%40h", sfp_out);
+  //   #0.5 clk = 1'b1;
+
   // end
-   #0.5 clk = 1'b0;  
-  pmem_rd = 0; div = 0; pmem_add = 0;
+  
+  // // for(q=0;q<total_cycle+1;q=q+1) begin
+  // //   #0.5 clk = 1'b0;
+  // //   // fifo_ext_rd = 1'b1;
+  // //   // fifo_out[q] = sum_out;
+  // //   $display("%40h", sfp_out);
+  // //   $display("%5h", fifo_out[q]);
+  // //   #0.5 clk = 1'b1;
+  // // end
+  //  #0.5 clk = 1'b0;  
+  // pmem_rd = 0; div = 0; pmem_add = 0;
  
-  #0.5 clk = 1'b1;
+  // #0.5 clk = 1'b1;
 
   #10 $finish;
 
